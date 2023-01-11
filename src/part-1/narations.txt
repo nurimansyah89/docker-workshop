@@ -1,0 +1,13 @@
+- Jalankan perintah: docker version
+- Download image "busyox": docker pull busybox
+- Jalankan perintah: docker run --name part-1 busybox echo "hello world"
+- Jalankan perintah: docker ps
+- Jalankan perintah: docker rm part-1
+- Jalankan perintah: docker run --rm -it busybox /bin/bash
+- Bukan terminal satu lagi, jalankan perintah: docker ps
+- Test environment, jalankan perintah: docker run --rm -it -e SAMPLE_ENV="guys" busybox echo "hello $SAMPLE_ENV"
+
+- Build image, jalankan perintah: docker build -t my-app:0.0.0 -t my-app:latest .
+- Run image, jalankan perintah: docker run my-app
+- Run image spesifik versi, jalankan perintah: docker run --rm -it my-app:0.0.0
+- Hapus image, jalankan perientah: docker rmi my-app:latest
