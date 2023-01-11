@@ -1,0 +1,11 @@
+- Share image via docker hub/registry (public/private)
+  - Run: docker login
+  - Run: docker tag my-app:latest nurimansyah/my-app:latest
+  - Run: docker push nurimansyah/my-app:latest
+
+- Save image for local use
+  - Run: docker save my-app > my-app.tar
+
+- Load local image
+  - Locate tar image
+  - Run: docker load < my-app.tar
