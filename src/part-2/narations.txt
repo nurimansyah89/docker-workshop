@@ -1,0 +1,7 @@
+- Jalankan perintah: docker run --rm -it -p 3000:80 nginx:alpine
+- Buat image nginx baru: docker build -t my-app:0.1.0 -t my-app:latest .
+- Run kembali: docker run --rm -it -p 3000:80 my-app:latest
+
+- Update file html
+- Update image kembali: docker build -t my-app:0.2.0 -t my-app:latest .
+- Run kembali: docker run --rm -it -p 3000:80 my-app:latest
